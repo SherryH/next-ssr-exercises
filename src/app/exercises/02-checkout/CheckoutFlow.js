@@ -4,7 +4,6 @@ import Spinner from '../../../components/Spinner';
 import CartTable from './CartTable';
 
 function CheckoutFlow({ items, taxRate, handleDeleteItem }) {
-  console.dir(items);
   if (items === null) {
     return (
       <div className="checkout-flow empty">

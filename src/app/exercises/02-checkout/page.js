@@ -28,7 +28,6 @@ function CheckoutExercise() {
   // it may cause flickering issue
   React.useEffect(() => {
     const initItems = JSON.parse(window.localStorage.getItem('items')) || [];
-    console.log(initItems);
     dispatch({
       type: 'initialize',
       items: initItems,
